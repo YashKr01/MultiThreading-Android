@@ -1,4 +1,4 @@
-package com.example.threads;
+package com.example.threads.java;
 
 import android.os.Handler;
 import android.os.HandlerThread;

@@ -1,4 +1,4 @@
-package com.example.threads;
+package com.example.threads.java;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
