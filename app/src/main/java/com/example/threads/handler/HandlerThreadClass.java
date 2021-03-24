@@ -16,6 +16,7 @@ public class HandlerThreadClass extends HandlerThread {
     protected void onLooperPrepared() {
         super.onLooperPrepared();
         handler = new Handler();
+
     }
 
     public Handler getHandler() {

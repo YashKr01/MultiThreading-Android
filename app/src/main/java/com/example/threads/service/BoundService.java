@@ -17,15 +17,10 @@ public class BoundService extends Service {
     IBinder binder = new LocalBinder();
     Random random = new Random();
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        return super.onStartCommand(intent, flags, startId);
-    }
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        Log.d(TAG, "onBind: Binded");
+        Log.d(TAG, "onBind:");
         return binder;
     }
     

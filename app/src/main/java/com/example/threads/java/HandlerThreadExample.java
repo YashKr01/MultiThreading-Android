@@ -18,15 +18,13 @@ public class HandlerThreadExample extends HandlerThread {
     protected void onLooperPrepared() {
         super.onLooperPrepared();
 
-        handler = new Handler(getLooper()){
+        handler = new Handler(getLooper());
+        handler.post(new Runnable() {
             @Override
-            public void handleMessage(@NonNull Message msg) {
-                super.handleMessage(msg);
-
-
+            public void run() {
 
             }
-        };
+        });
 
     }
 }
