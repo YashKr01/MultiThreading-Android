@@ -11,19 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Threads">
-        <activity android:name=".handler.HandlerActivity">
 
+        <activity android:name=".service.ServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".retrofit.NewsActivity"/>
+
+        <activity android:name=".handler.HandlerThreadActivity"/>
+
+        <activity android:name=".handler.HandlerActivity" />
+
+        <activity android:name=".retrofit.NewsActivity" />
 
         <activity android:name=".java.BroadcastReceiverActivity" />
 
         <activity android:name=".MainActivity" />
+
+
+        <service android:name=".service.BoundService" />
 
     </application>
 
